@@ -1,7 +1,8 @@
 
 # Count Count CLI - A Memory Game Rewritten in Rust 
 
-![GitHub top language](https://img.shields.io/github/languages/top/saheb-ul-lah/Count-Count-CLI-Rust?style=for-the-badge&color=orange)![License](https://img.shields.io/github/license/saheb-ul-lah/Count-Count-CLI-Rust?style=for-the-badge&color=blue)![Rust Version](https://img.shields.io/badge/rust-1.78%2B-orange.svg?style=for-the-badge)
+<img src="https://skillicons.dev/icons?i=rust" height="28" />![Rust Version](https://img.shields.io/badge/rust-1.85%2B-orange.svg?style=for-the-badge)
+
 
 **`Count Count`** is a CLI-based memory and focus game. It challenges players to count a sequence of procedurally generated ASCII art shapes that flash across the screen. This project represents a significant milestone in my programming journey: a complete rewrite of one of my foundational C projects in the Rust programming language.
 
@@ -46,25 +47,33 @@ The game features a wide variety of procedurally generated shapes. Below is a co
 
 | Shape Name | Rendition |
 | :--- | :--- |
-| **Triangle** | <pre><code>   .
+**Triangle** 
+```
+   .
   . .
  .   .
-.     .</code></pre> |
-| **Square** | <pre><code>.....
+.......
+```
+
+ **Square**  
+```
 .....
 .....
 .....
-.....</code></pre> |
-| **Circle** | <pre><code> .-. 
-/   \
-\   /
- '-' </code></pre> |
-| **Arrow** | <pre><code>  .
+.....
+.....
+```
+
+ **Arrow** 
+```
+  .
  . .
 . . .
   .
-  .</code></pre> |
+  .
+  .
 
+```
 </details>
 
 <details>
@@ -73,124 +82,218 @@ The game features a wide variety of procedurally generated shapes. Below is a co
 
 | Letter | Rendition | Letter | Rendition |
 | :--- | :--- | :--- | :--- |
-| **A** | <pre><code> . 
-. .
-...
-. .
-. .</code></pre> | **N** | <pre><code>.  .
-.. .
-. ..
-.  .
-.  .</code></pre> |
-| **B** | <pre><code>...
-.  .
-...
-.  .
-...</code></pre> | **O** | <pre><code> ... 
-.   .
-.   .
-.   .
- ... </code></pre> |
-| **C** | <pre><code> ...
-.
-.
-.
- ...</code></pre> | **P** | <pre><code>...
-.  .
-...
-.
-.</code></pre> |
-| **D** | <pre><code>..
-. .
-.  .
-. .
-..</code></pre> | **Q** | <pre><code> ... 
-.   .
-. . .
-.  ..
- ... .</code></pre> |
-| **E** | <pre><code>....
-.
-...
-.
-....</code></pre> | **R** | <pre><code>...
-.  .
-...
-. .
-.  .</code></pre> |
-| **F** | <pre><code>....
-.
-...
-.
-.</code></pre> | **S** | <pre><code>....
-.
- ...
-    .
-....</code></pre> |
-| **G** | <pre><code> ...
-.
-. ..
-.  .
- ...</code></pre> | **T** | <pre><code>.....
-  .
-  .
-  .
-  .</code></pre> |
-| **H** | <pre><code>.  .
-.  .
-....
-.  .
-.  .</code></pre> | **U** | <pre><code>.   .
-.   .
-.   .
-.   .
- ... </code></pre> |
-| **I** | <pre><code>...
- .
- .
- .
-...</code></pre> | **V** | <pre><code>.   .
-.   .
- . .
- . .
-  .</code></pre> |
-| **J** | <pre><code>....
-   .
-   .
-.  .
- ..</code></pre> | **W** | <pre><code>.   .
-. . .
-. . .
-. . .
-.   .</code></pre> |
-| **K** | <pre><code>.  .
-. .
-..
-. .
-.  .</code></pre> | **X** | <pre><code>.   .
- . .
-  .
- . .
-.   .</code></pre> |
-| **L** | <pre><code>.
-.
-.
-.
-....</code></pre> | **Y** | <pre><code>.   .
- . .
-  .
-  .
-  .</code></pre> |
-| **M** | <pre><code>.   .
-.. ..
-. . .
-.   .
-.   .</code></pre> | **Z** | <pre><code>.....
-   .
-  .
- .
-.....</code></pre> |
 
+```
+--- Shape A ---
+     *
+    * *
+   *****
+  *     *
+ *       *
+```
+```
+--- Shape B ---
+**** 
+*   *
+*   *
+**** 
+*   *
+*   *
+**** 
+```
+```
+--- Shape C ---
+ ****
+*    
+*    
+*    
+ ****
+```
+```
+--- Shape D ---
+**** 
+ *  *
+ *  *
+ *  *
+**** 
+```
+```
+--- Shape E ---
+*****
+*    
+*****
+*    
+*****
+```
+```
+--- Shape F ---
+*****
+*    
+*****
+*    
+*    
+```
+```
+--- Shape G ---
+ ****
+*    
+*  **
+*   *
+ ****
+```
+```
+--- Shape H ---
+*   *
+*   *
+*****
+*   *
+*   *
+```
+```
+--- Shape I ---
+*****
+  *  
+  *  
+  *  
+*****
+```
+```
+--- Shape J ---
+*****
+  *  
+  *  
+* *  
+ **  
+```
+```
+--- Shape K ---
+* *
+** 
+*  
+** 
+* *
+```
+```
+--- Shape L ---
+*    
+*    
+*    
+*    
+*****
+```
+```
+--- Shape M ---
+*   *
+** **
+* * *
+*   *
+*   *
+```
+```
+--- Shape N ---
+*   *
+**  *
+* * *
+*  **
+*   *
+```
+```
+--- Shape O ---
+ *** 
+*   *
+*   *
+*   *
+ *** 
+```
+```
+--- Shape P ---
+ *** 
+*   *
+**** 
+*    
+     
+```
+```
+--- Shape Q ---
+ *** 
+*   *
+*   *
+*  **
+ ****
+     * 
+```
+```
+--- Shape R ---
+ *** 
+*   *
+**** 
+*   *
+     
+```
+```
+--- Shape S ---
+ *** 
+*    
+ *** 
+    *
+ *** 
+```
+```
+--- Shape T ---
+*****
+  *  
+  *  
+  *  
+  *  
+```
+```
+--- Shape U ---
+*   *
+*   *
+*   *
+*   *
+ *** 
+```
+```
+--- Shape V ---
+*       * 
+ *     *  
+  *   *   
+   * *    
+    *     
+```
+```
+--- Shape W ---
+*   *
+*   *
+* * *
+** **
+*   *
+```
+```
+--- Shape X ---
+*   *
+ * * 
+  *  
+ * * 
+*   *
+```
+```
+--- Shape Y ---
+*   *
+ * * 
+  *  
+  *  
+  *  
+```
+```
+--- Shape Z ---
+*****
+   * 
+  *  
+ *   
+*****
+```
 </details>
 
 <details>
@@ -199,51 +302,119 @@ The game features a wide variety of procedurally generated shapes. Below is a co
 
 | Number | Rendition | Number | Rendition |
 | :--- | :--- | :--- | :--- |
-| **0** | <pre><code> ... 
-.   .
-.   .
-.   .
- ... </code></pre> | **5** | <pre><code>....
-.
-....
-   .
-....</code></pre> |
-| **1** | <pre><code> .
-..
- .
- .
-...</code></pre> | **6** | <pre><code> ...
-.
-....
-.   .
- ... </code></pre> |
-| **2** | <pre><code>....
-   .
-....
-.
-....</code></pre> | **7** | <pre><code>....
-   .
-  .
- .
- .</code></pre> |
-| **3** | <pre><code>....
-   .
-....
-   .
-....</code></pre> | **8** | <pre><code> ... 
-.   .
- ... 
-.   .
- ... </code></pre> |
-| **4** | <pre><code>.  .
-.  .
-....
-   .
-   .</code></pre> | **9** | <pre><code> ... 
-.   .
- ....
-    .
- ... </code></pre> |
+
+```
+--- Shape 1 ---
+  *  
+ **  
+  *  
+  *  
+*****
+```
+```
+--- Shape 2 ---
+ *** 
+    *
+ *** 
+*    
+ *** 
+```
+```
+--- Shape 3 ---
+ *** 
+    *
+ *** 
+    *
+ *** 
+```
+```
+--- Shape 4 ---
+*   *
+*   *
+ *** 
+    *
+    *
+```
+```
+--- Shape 4 (2nd) ---
+    *
+  * *
+*****
+    *
+    *
+```
+```
+--- Shape 5 ---
+ *** 
+*    
+ *** 
+    *
+ *** 
+```
+```
+--- Shape 5 (2nd) ---
+**** 
+*    
+**** 
+    *
+**** 
+```
+```
+--- Shape 6 ---
+ *** 
+*    
+ *** 
+*   *
+ *** 
+```
+```
+--- Shape 6 (2nd) ---
+ *** 
+*    
+**** 
+*   *
+ *** 
+```
+```
+--- Shape 7 ---
+**** 
+    *
+    *
+    *
+    *
+```
+```
+--- Shape 7 (2nd) ---
+*****
+   * 
+*****
+ *   
+*    
+```
+```
+--- Shape 8 ---
+ *** 
+*   *
+ *** 
+*   *
+ *** 
+```
+```
+--- Shape 9 ---
+ *** 
+*   *
+ *** 
+    *
+ *** 
+```
+```
+--- Shape 9 (2nd) ---
+ *** 
+*   *
+ ****
+    *
+ *** 
+```
 
 </details>
 
