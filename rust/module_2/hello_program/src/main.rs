@@ -1,7 +1,5 @@
 fn main() {
     
-
-
     // Declaring integer variable
     let num: u8 = 5; // u8 means unsigned 8-bit integer, it is optional to specify type, but generally a good practice, it is mandatory in complex datatypes
     println!("The value stored in num is {}", num);
