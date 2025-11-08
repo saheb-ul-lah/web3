@@ -1,4 +1,3 @@
----
 
 # Count Count CLI - A Memory Game Rewritten in Rust 
 
@@ -9,7 +8,7 @@
 This endeavor was undertaken during my second week of learning Rust, serving as a practical, hands-on application of the language's core principles.
 
 ---
-<img src="./count_count_cli/screenshots/welcome-screen.png" alt="Welcome screen" width="800" />
+<img src="./screenshots/welcome-screen.png" alt="Welcome screen" width="800" />
 
 ---
 
