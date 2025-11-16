@@ -3,14 +3,22 @@ import { Program } from "@coral-xyz/anchor";
 import { CalciAnch } from "../target/types/calci_anch";
 
 describe("calci_anch", () => {
-  // Configure the client to use the local cluster.
-  anchor.setProvider(anchor.AnchorProvider.env());
+  const provider = anchor.AnchorProvider.env();
+  anchor.setProvider(provider);
 
-  const program = anchor.workspace.calciAnch as Program<CalciAnch>;
+  const program = anchor.workspace.CalciAnch as Program<CalciAnch>;
+
+  const calciAcc = anchor.web3.Keypair.generate();
 
   it("Is initialized!", async () => {
-    // Add your test here.
-    const tx = await program.methods.initialize().rpc();
-    console.log("Your transaction signature", tx);
+    const tx = await program.methods.initialize()
+      .accounts({
+        feePayer: provider.wallet.publicKey,                    // camelCase
+        calciAcc: calciAcc.publicKey                            // camelCase
+      })
+      .signers([calciAcc])
+      .rpc();
+
+    console.log("Initialized! Signature:", tx);
   });
 });
